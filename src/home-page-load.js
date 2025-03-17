@@ -1,3 +1,4 @@
+import caffeImg from "./images/caffe.png";
 
 export function loadHomePage() {
 
@@ -39,8 +40,12 @@ export function loadHomePage() {
 
         quotesPlaceHolder.appendChild(quotePlaceHolder);
     }
-
     container.appendChild(quotesPlaceHolder);
+
+    // Image
+    const caffeImage = document.createElement("img");
+    caffeImage.src = caffeImg;
+    container.appendChild(caffeImage);
 
     // More personal data
     const personalText = document.createElement("p");
