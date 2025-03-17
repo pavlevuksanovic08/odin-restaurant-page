@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { watchFile } = require("fs");
+const { type } = require("os");
 
 module.exports = {
     mode: "development",
@@ -19,4 +20,12 @@ module.exports = {
             template: "./src/template.html",
         }),
     ],
+    module: {
+        rules: [
+            {
+                test: /\.png$/i,
+                type: "asset/resource",
+            },
+        ],
+    },
 };
