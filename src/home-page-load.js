@@ -16,65 +16,29 @@ export function loadHomePage() {
     // QUOTES
     const quotesPlaceHolder = document.createElement("div");
 
-    // quote 1
-    const quote1PlaceHolder = document.createElement("div");
-    
-    const quote1 = document.createElement("p");
-    quote1.classList.add("quote");
-    quote1.innerText = "\"Ko je poslao sliku mog caleta?\"";
-    quote1PlaceHolder.appendChild(quote1);
+    const quotes = [
+        {quote: "\"Ko je poslao sliku mog caleta?\"", author: "Danilo Badnjar"},
+        {quote: "\"Juliet has massive gyatt.\"", author: "Romeo probably"},
+        {quote: "\"Erm, what a sigma?\"", author: "Squidward"},
+        {quote: "\"Geda Gedi Gedagao\"", author: "Chicken Nugget"}
+    ];
 
-    const quote1Author = document.createElement("p");
-    quote1Author.classList.add("author");
-    quote1Author.innerText = "Danilo Badnjar";
-    quote1PlaceHolder.appendChild(quote1Author);
-    
-    quotesPlaceHolder.appendChild(quote1PlaceHolder);
+    // render quotes
+    for (let quote of quotes) {
+        const quotePlaceHolder = document.createElement("div");
 
-    // quote 2
-    const quote2PlaceHolder = document.createElement("div");
+        const quoteText = document.createElement("p");
+        quoteText.classList.add("quote");
+        quoteText.innerText = quote.quote;
+        quotePlaceHolder.appendChild(quoteText);
 
-    const quote2 = document.createElement("p");
-    quote2.classList.add("quote");
-    quote2.innerText = "\"Juliet has massive gyatt.\"";
-    quote2PlaceHolder.appendChild(quote2);
+        const quoteAuthorText = document.createElement("p");
+        quoteAuthorText.classList.add("author");
+        quoteAuthorText.innerText = quote.author;
+        quotePlaceHolder.appendChild(quoteAuthorText);
 
-    const quote2Author = document.createElement("p");
-    quote2Author.classList.add("author");
-    quote2Author.innerText = "Romeo probably";
-    quote2PlaceHolder.appendChild(quote2Author);
-
-    quotesPlaceHolder.appendChild(quote2PlaceHolder);
-
-    // quote 3
-    const quote3PlaceHolder = document.createElement("div");
-
-    const quote3 = document.createElement("p");
-    quote3.classList.add("quote");
-    quote3.innerText = "\"Erm, what a sigma?\"";
-    quote3PlaceHolder.appendChild(quote3);
-
-    const quote3Author = document.createElement("p");
-    quote3Author.classList.add("author");
-    quote3Author.innerText = "Squidward";
-    quote3PlaceHolder.appendChild(quote3Author);
-
-    quotesPlaceHolder.appendChild(quote3PlaceHolder);
-
-    // quote 4
-    const quote4PlaceHolder = document.createElement("div");
-
-    const quote4 = document.createElement("p");
-    quote4.classList.add("quote");
-    quote4.innerText = "\"Geda Gedi Gedagao\"";
-    quote4PlaceHolder.appendChild(quote4);
-
-    const quote4Author = document.createElement("p");
-    quote4Author.classList.add("author");
-    quote4Author.innerText = "Chicken Nugget";
-    quote4PlaceHolder.appendChild(quote4Author);
-
-    quotesPlaceHolder.appendChild(quote4PlaceHolder);
+        quotesPlaceHolder.appendChild(quotePlaceHolder);
+    }
 
     container.appendChild(quotesPlaceHolder);
 
