@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     overflow: auto;
     background-image: url("./images/coffeeBeans.png");
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Brewed Coffee';
     color: beige;
     text-align: center;
 }
