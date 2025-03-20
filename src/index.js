@@ -1,3 +1,4 @@
+import "./styles.css";
 import { loadHomePage } from "./home-page-load.js";
 import { loadMenuPage } from "./menu-page-load.js";
 import { loadAboutPage } from "./about-page-load.js";
