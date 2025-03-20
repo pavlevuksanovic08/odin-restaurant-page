@@ -16,12 +16,13 @@ export function loadHomePage() {
 
     // QUOTES
     const quotesPlaceHolder = document.createElement("div");
+    quotesPlaceHolder.classList.add("quotes-container");
 
     const quotes = [
-        {quote: "\"Ko je poslao sliku mog caleta?\"", author: "Danilo Badnjar"},
-        {quote: "\"Juliet has massive gyatt.\"", author: "Romeo probably"},
-        {quote: "\"Erm, what a sigma?\"", author: "Squidward"},
-        {quote: "\"Geda Gedi Gedagao\"", author: "Chicken Nugget"}
+        {quote: "\"Ko je poslao sliku mog caleta?\"", author: "-Danilo Badnjar"},
+        {quote: "\"Juliet has massive gyatt.\"", author: "-Romeo probably"},
+        {quote: "\"Erm, what a sigma?\"", author: "-Squidward"},
+        {quote: "\"Geda Gedi Gedagao\"", author: "-Chicken Nugget"}
     ];
 
     // render quotes
@@ -44,6 +45,7 @@ export function loadHomePage() {
 
     // Image
     const caffeImage = document.createElement("img");
+    caffeImage.classList.add("caffeImg");
     caffeImage.src = caffeImg;
     container.appendChild(caffeImage);
 
