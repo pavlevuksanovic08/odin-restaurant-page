@@ -90,6 +90,7 @@ export function loadMenuPage() {
         const itemImage = document.createElement("div");
         itemImage.classList.add("image");
         const image = document.createElement("img");
+        image.classList.add("coffee-image");
         image.src = item.image;
         itemImage.appendChild(image);
 

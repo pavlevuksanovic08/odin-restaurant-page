@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.drink {
+    display: flex;
+    border: 5px solid beige;
+    border-radius: 2%;
+    margin: 2%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.data {
+    flex: 1;
+    margin-left: 4%;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 140%;
+    text-align: left;
+}
+
+.ingredients {
+    font-size: 70%;
+}
+
+.coffee-image {
+    width: 40%;
+    height: auto;
+}

@@ -1,5 +1,6 @@
 import "./styles.css";
-import "./homepage.css"
+import "./homepage.css";
+import "./menupage.css";
 import { loadHomePage } from "./home-page-load.js";
 import { loadMenuPage } from "./menu-page-load.js";
 import { loadAboutPage } from "./about-page-load.js";
