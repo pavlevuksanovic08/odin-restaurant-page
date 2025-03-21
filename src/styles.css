@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     overflow: auto;
     background-image: url("./images/coffeeBeans.png");
+    background-attachment: fixed;
     font-family: 'Brewed Coffee';
     color: beige;
     text-align: center;
@@ -43,4 +44,12 @@ h1 {
 
 .main-header {
     font-size: 450%;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.4);
+    p {
+        margin: 0;
+        padding: 1.5%;
+    }
 }
