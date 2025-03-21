@@ -19,6 +19,15 @@
 .location-map {
     flex: 1;
     margin-right: 10%;
+    /*commit*/
+    border: 5px solid beige;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .contact {
