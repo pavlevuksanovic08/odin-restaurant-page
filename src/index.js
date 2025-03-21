@@ -2,31 +2,43 @@ import "./styles.css";
 import "./homepage.css";
 import "./menupage.css";
 import "./aboutpage.css";
+import "./buttons.css";
 import { loadHomePage } from "./home-page-load.js";
 import { loadMenuPage } from "./menu-page-load.js";
 import { loadAboutPage } from "./about-page-load.js";
-
-loadHomePage();
 
 const container = document.getElementById("content");
 
 const homeBtn = document.getElementById("home");
 
+const menuBtn = document.getElementById("menu");
+
+const aboutBtn = document.getElementById("about");
+
 homeBtn.addEventListener("click", () => {
     container.innerHTML = "";
+    menuBtn.style.textDecoration = "none";
+    aboutBtn.style.textDecoration = "none";
+    homeBtn.style.textDecoration = "underline";
     loadHomePage();
 });
 
-const menuBtn = document.getElementById("menu");
-
 menuBtn.addEventListener("click", () => {
     container.innerHTML = "";
-    loadMenuPage();
+    homeBtn.style.textDecoration = "none";
+    aboutBtn.style.textDecoration = "none";
+    menuBtn.style.textDecoration = "underline";
+    loadMenuPage(); 
 });
 
-const aboutMenu = document.getElementById("about");
-
-aboutMenu.addEventListener("click", () => {
+aboutBtn.addEventListener("click", () => {
     container.innerHTML = "";
-    loadAboutPage();
+    homeBtn.style.textDecoration = "none";
+    menuBtn.style.textDecoration = "none";
+    aboutBtn.style.textDecoration = "underline";
+    loadAboutPage(); 
 });
+
+
+homeBtn.style.textDecoration = "underline";
+loadHomePage();
