@@ -53,7 +53,12 @@ export function loadMenuPage() {
     // All things from menu will be stored inside grid with css
 
     const container = document.querySelector("#content");
-    
+
+    // Header
+    const header = document.createElement("h1");
+    header.innerText = "MENU";
+    container.appendChild(header);
+
     //Creating grid container
     const grid_container = document.createElement("div");
     grid_container.classList.add("grid-container");
