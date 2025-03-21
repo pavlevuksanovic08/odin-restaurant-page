@@ -9,15 +9,38 @@ body, html {
 }
 
 #content {
-    background-color: #bb6528;
+    background-color: rgba(0, 0, 0, 0.4);
     width: 85%;
     margin: auto;
     border-radius: 2%;
     padding: 1%;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
 
 #content > * {
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
+}
+
+h1 {
+    font-size: 300%;
+    text-decoration: underline;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.logo-img {
+    width: 10%;
+    height: auto;
+}
+
+.main-header {
+    font-size: 450%;
 }
